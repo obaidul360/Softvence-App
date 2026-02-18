@@ -10,7 +10,7 @@ class DrawerWidgets extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          // 🔹 Header
+          // Header
           UserAccountsDrawerHeader(
             accountName: Text("Md Obaidul Islam"),
             accountEmail: Text("obdcse360@email.com"),

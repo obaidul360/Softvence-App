@@ -46,13 +46,11 @@ class _CurrentLocatrionScreenState extends State<CurrentLocatrionScreen> {
 
     currentLatLng = LatLng(position.latitude, position.longitude);
 
-    // map marker update
     markers.clear();
     markers.add(
       Marker(markerId: const MarkerId("me"), position: currentLatLng!),
     );
 
-    // camera move
     mapController?.animateCamera(
       CameraUpdate.newLatLngZoom(currentLatLng!, 16),
     );
@@ -93,19 +91,18 @@ Area: ${place.street}
           ),
         ),
         iconTheme: IconThemeData(
-          color: Colors.white, // drawer icon color
+          color: Colors.white,
         ),
       ),
       drawer: DrawerWidgets(),
       backgroundColor: Color(0xff0E0B40),
       body: Column(
         children: [
-          //Lower Half — Map
           Expanded(
             flex: 2,
             child: GoogleMap(
               initialCameraPosition: const CameraPosition(
-                target: LatLng(23.777176, 90.399452), // Dhaka default
+                target: LatLng(23.777176, 90.399452),
                 zoom: 12,
               ),
               markers: markers,
@@ -163,7 +160,6 @@ Area: ${place.street}
           ),
 
           SizedBox(height: 10),
-          //Navigator
           SetAlarmButtonWidgets(),
           SizedBox(height: 10),
         ],

@@ -79,7 +79,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) =>
-                                  // CurrentLocatrionScreen(),
                                   LocationScreen(),
                                 ),
                               );
@@ -128,7 +127,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             ),
           ),
 
-          /// DOT INDICATOR
+          // DOT INDICATOR //
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: List.generate(
@@ -165,11 +164,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       curve: Curves.ease,
                     );
                   } else {
-                    // Last page → navigate to Home
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        //builder: (context) => CurrentLocatrionScreen(),
                         builder: (context) => LocationScreen(),
                       ),
                     );

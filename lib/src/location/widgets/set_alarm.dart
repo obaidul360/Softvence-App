@@ -14,8 +14,8 @@ class SetAlarmButtonWidgets extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => AlarmScreen(), //AlarmSetScreen(),
-            ), // AlarmScreenGoMap()),
+              builder: (context) => AlarmScreen(),
+            ),
           );
         },
         child: Container(

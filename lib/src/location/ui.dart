@@ -45,7 +45,7 @@ class _LocationScreenState extends State<LocationScreen> {
           ),
         ),
         iconTheme: IconThemeData(
-          color: Colors.white, // drawer icon color
+          color: Colors.white,
         ),
       ),
       drawer: DrawerWidgets(),

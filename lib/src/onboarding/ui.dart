@@ -18,19 +18,19 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       "image": "asset/images/ond_one.png",
       "title": "Discover the world, one journey at a time.",
       "subtitle":
-      "From hidden games to iconic destinations, we make travel simple, inspiring, and unforgettable. Start your next adventure today.",
+          "From hidden games to iconic destinations, we make travel simple, inspiring, and unforgettable. Start your next adventure today.",
     },
     {
       "image": "asset/images/ond_two.png",
       "title": "Explore new horizons, one step at a time.",
       "subtitle":
-      "Every trip holds a story waiting to be lived. Let us guide you to experiences that inspire, connect, and last a lifetime.",
+          "Every trip holds a story waiting to be lived. Let us guide you to experiences that inspire, connect, and last a lifetime.",
     },
     {
       "image": "asset/images/ond_three.png",
       "title": "See the beauty, one journey at a time.",
       "subtitle":
-      "Travel made simple and exciting—discover places you'll love and moments you'll never forget.",
+          "Travel made simple and exciting—discover places you'll love and moments you'll never forget.",
     },
   ];
 
@@ -78,16 +78,25 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) =>
-                                  LocationScreen(),
+                                  builder: (context) => LocationScreen(),
                                 ),
                               );
                             },
-                            child: Text(
-                              "Skip",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
+                            child: TextButton(
+                              onPressed: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => LocationScreen(),
+                                  ),
+                                );
+                              },
+                              child: Text(
+                                "Skip",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
                           ),
@@ -132,7 +141,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: List.generate(
               onboardingData.length,
-                  (index) => AnimatedContainer(
+              (index) => AnimatedContainer(
                 duration: Duration(milliseconds: 300),
                 margin: EdgeInsets.symmetric(horizontal: 4),
                 width: currentIndex == index ? 16 : 8,
@@ -166,9 +175,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   } else {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => LocationScreen(),
-                      ),
+                      MaterialPageRoute(builder: (context) => LocationScreen()),
                     );
                   }
                 },

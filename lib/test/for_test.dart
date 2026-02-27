@@ -10,6 +10,13 @@ class TestScreen extends StatefulWidget {
 class _TestScreenState extends State<TestScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Test Screen")));
+    return Scaffold(appBar: AppBar(title: Text("Test Screen"))
+    ,
+      body: Column(
+        children: [
+          Text("This is Column")
+        ],
+      ),
+    );
   }
 }

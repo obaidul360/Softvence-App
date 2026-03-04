@@ -156,8 +156,8 @@ class _CommunityLearningDialogState extends State<CommunityLearningDialog> {
           Text("Upload"),
           Container(
             child: ListTile(
-              leading: Icon(Icons.miscellaneous_services_outlined),
-              trailing: Icon(Icons.arrow_back_ios_outlined),
+              leading: Icon(Icons.miscellaneous_services_outlined,size: 30,),
+              trailing: Icon(Icons.arrow_back_ios_outlined,size: 30,),
               title: Text("All Services"),
               subtitle: Text("Services"),
             ),

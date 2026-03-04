@@ -149,6 +149,11 @@ class _CommunityLearningDialogState extends State<CommunityLearningDialog> {
           Text("Next"),
           Text("Save"),
           Text("Upload"),
+          Text("Upload"),
+          Text("Upload"),
+          Text("Upload"),
+          Text("Upload"),
+          Text("Upload"),
         ],
       ),
     );
